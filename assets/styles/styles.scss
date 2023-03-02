@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Chathura&family=Lato:wght@300;400&display=swap');
+
+$font-body: 'Lato',
+sans-serif;
+$font-logo: 'Century Schoolbook',
+serif;
+$font-footer:'Chathura',
+sans-serif;
+
+$c1:#F8F7F5;
+$c2:#D7D2D2;
+$c3:#9B9393;
+$c4:#5F4E4E;
+$c5:#727272;
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background-color: $c1;
+    font-family: $font-body;
+    font-weight: 300;
+
+    p {
+        margin: 0;
+    }
+
+    h1 {
+        font-family: $font-logo;
+        font-size: 1rem;
+    }
+}
+
+ul {
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+h2 {
+    color: $c5;
+    font-size: 1.1em;
+}
+
+
+
+.navbar-brand {
+    h1 {
+        margin-bottom: 0;
+        color: $c4
+    }
+}
+
+#header {
+    nav {
+        .offcanvas {
+            background-color: $c2;
+        }
+
+        .offcanvas-title {
+            font-size: 2em;
+            font-family: $font-logo;
+            color: $c3;
+        }
+
+        .offcanvas-footer {
+
+            img {
+                width: 15.64vw;
+                height: calc(15.64vw*0.75);
+                margin-top: 2.3%;
+                margin-bottom: 2.4%;
+            }
+        }
+
+        button {
+            border-style: none;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+#about {
+    margin: 4.4%;
+
+    h2 {
+        color: $c3;
+        margin-bottom: 5%;
+    }
+
+    span {
+        font-style: italic;
+        font-weight: bold;
+        padding-right: 2px;
+    }
+
+    img {
+        border-radius: 2px;
+        width: 34vw;
+        height: calc(34vw*1.33);
+        margin-left: 1.35%;
+        padding-top: 10px;
+    }
+
+    p {
+        font-size: 0.625em;
+        color: black;
+    }
+}
+
+#products {
+    background-color: $c3;
+    padding: 4.4% 4%;
+
+    a {
+        text-decoration: none;
+    }
+
+    h2 {
+        color: $c1;
+        padding-left: 12px;
+        margin-bottom: 0;
+    }
+
+    .modal-header {
+        background-color: $c1;
+    }
+
+    .modal-dialog {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+    }
+
+    .modal-body {
+        background-color: $c1;
+        border-radius: 10px;
+    }
+
+    .modal-detalles {
+        border-radius: 10px;
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            text-transform: capitalize;
+            padding-left: 0;
+            color: $c3;
+            font-size: 1.25em;
+        }
+
+        button {
+            align-self: center;
+            border-style: none;
+            border-radius: 5px;
+            background-color: $c4;
+            padding: 1% 3%;
+            margin-bottom: 4%;
+            font-size: .75em;
+
+            a {
+                text-decoration: none;
+                color: $c1;
+            }
+        }
+
+        p {
+            font-size: .6em;
+            margin-bottom: 4%;
+        }
+    }
+
+    .card {
+        background-color: transparent;
+        border-style: none;
+        color: $c1;
+        text-align: center;
+
+        .card-body {
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        .card-title {
+            text-transform: capitalize;
+            font-size: 0.6em;
+            margin-bottom: 0;
+            width: auto;
+            font-weight: 300;
+        }
+
+        img {
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .btnVerMas {
+            background-color: transparent;
+            color: $c1;
+            padding: 3% 5%;
+            border: 1px solid $c1;
+            border-radius: 5px;
+            font-size: 0.5em;
+            font-weight: 300;
+        }
+    }
+}
+
+
+#footer {
+    background-color: $c3;
+
+    img {
+        width: 15.64vw;
+        height: calc(15.64vw*0.75);
+        margin-top: 2.3%;
+        margin-bottom: 2.4%;
+    }
+
+    p {
+        color: $c1;
+        font-size: 0.625em;
+        margin-bottom: 3%;
+        font-family: 'Chathura', sans-serif;
+
+        a {
+            color: $c1;
+            text-decoration: none;
+        }
+    }
+}
+
+#contact {
+    margin: 4.8% 0 5.7% 0;
+
+    .inputForm {
+        border: 1px solid $c5;
+        border-radius: 10px;
+        height: 5%;
+        background-color: $c1;
+        margin-bottom: 4%;
+        font-size: 0.625em;
+        padding: 5px 5px 5px 10px;
+    }
+
+    .labelForm {
+        font-size: 0.625em;
+        color: $c5;
+        margin-bottom: 1%;
+    }
+
+    .textForm {
+        @extend .inputForm;
+        height: 20%;
+    }
+
+    .botonSubmit {
+        background-color: $c4;
+        color: $c1;
+        font-size: 0.625em;
+        font-weight: 300;
+    }
+
+}
+
+#toTop {
+    background-color: $c5;
+    font-size: .5em;
+    border-radius: 8%;
+    text-align: center;
+    border: 2px solid $c2;
+    color: $c1;
+    padding: 1%;
+    display: none;
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    z-index: 1100;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:1399px) {
+
+    .offcanvas-start {
+        width: 75vw;
+    }
+
+    .navbar {
+        .tabs {
+            display: none;
+        }
+    }
+
+    .navbar-brand {
+        font-size: 16px;
+        flex-grow: 2;
+
+        h1 {
+            padding-right: 54px;
+            text-align: center;
+            font-family: $font-logo;
+            font-size: 1.875em;
+        }
+    }
+}
+
+
+@media screen and (min-width:1400px) {
+    body {
+        font-size: 40px;
+    }
+
+    .borderRight {
+        border-right: 1px solid black;
+        padding-top: .2rem;
+        padding-bottom: .2rem;
+        margin-top: .3rem;
+        margin-bottom: .3rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+
+        .navbar-brand {
+            font-size: 40px;
+
+            h1 {
+                font-family: $font-logo;
+                font-size: 1.1em;
+            }
+
+            h2 {
+                font-size: .3em;
+            }
+        }
+
+        .tabs {
+            display: flex;
+            flex-direction: row;
+
+            ul {
+                padding-left: 0;
+            }
+
+            li {
+                font-size: .45em;
+
+                a {
+                    text-decoration: none;
+                    color: $c4;
+                }
+
+                span {
+                    color: $c4;
+                }
+
+                list-style: none;
+            }
+        }
+
+        .offcanvas-start {
+            display: none;
+        }
+    }
+
+    #products {
+        h2 {
+            padding-left: 24px;
+        }
+
+        .modal-detalles {
+            p {
+                font-size: .3em;
+            }
+
+            h2 {
+                font-size: .6em;
+            }
+
+            button {
+                font-size: .4em;
+            }
+        }
+    }
+
+    #about {
+
+        img {
+            width: 391px;
+            height: 514px;
+        }
+    }
+
+}

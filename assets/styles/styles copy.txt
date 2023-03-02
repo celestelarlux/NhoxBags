@@ -1,0 +1,204 @@
+// @import url('../fonts/CENSCBK.TTF');
+// @import url('../fonts/Chathura-Regular.ttf');
+// @import url('../fonts/creato_display/CreatoDisplay-Regular.otf');
+
+$font-body: 'Creato Display',
+sans-serif;
+$font-logo: 'Century Schoolbook',
+sans-serif;
+
+$c1:#F8F7F5;
+$c2:#D7D2D2;
+$c3:#9B9393;
+$c4:#5F4E4E;
+$c5:#727272;
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $c1;
+    font-family: $font-body;
+    font-weight: 400;
+    font-size:
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: $font-logo;
+    color: $c4
+}
+
+h2 {
+    font-size: 45px;
+}
+
+.offcanvas-start {
+    width: 75vw;
+}
+
+.tituloContacto {
+    color: $c5;
+    padding: 0;
+    margin-bottom: 42px;
+    margin-top: 68px;
+}
+
+.inputForm {
+    border: 1px solid $c5;
+    border-radius: 10px;
+    height: 42px;
+    background-color: $c1;
+    margin-bottom: 23px;
+}
+
+.labelForm {
+    font-size: 25px;
+    color: $c5;
+    margin-bottom: 10px;
+}
+
+.textForm {
+    @extend .inputForm;
+    height: 120px;
+}
+
+.botonSubmit {
+    background-color: $c4;
+    color: white;
+    margin-top: 45px;
+    margin-bottom: 82px;
+    width: 109px;
+    height: 45px;
+}
+
+#header {
+    nav {
+
+        h1 {
+            margin-bottom: 0;
+        }
+
+        button {
+            margin-left: 15px;
+        }
+    }
+}
+
+#products {
+    background-color: $c3;
+    padding-top: 67px;
+    padding-bottom: 57.34px;
+
+    h2 {
+        color: white;
+    }
+
+    .card {
+        background-color: transparent;
+        border-style: none;
+        color: #FFF;
+        text-align: center;
+
+        .card-title {
+            text-transform: capitalize;
+            font-size: 25px;
+            margin-bottom: 0;
+            width: auto;
+        }
+
+        img {
+            height: 347.98px;
+            width: 274.72px;
+            border-radius: 2px;
+        }
+
+        a {
+            text-decoration: none;
+
+            .btnVerMas {
+                width: 88px;
+                height: 29.66px;
+                background-color: transparent;
+                color: #FFF;
+                border: 0.5px solid white;
+                border-radius: 5px;
+                font-size: 18px;
+                margin-top: 10.19px;
+    
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+#about {
+
+    margin-top: 66px;
+    margin-bottom: 66px;
+
+    div {
+        margin: 0px 15px;
+    }
+
+    h2 {
+        color: $c3;
+    }
+
+    span {
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    // img {
+    //     width: 134px;
+    //     height: 177px;
+    //     margin-left: 12px;
+    //     border-radius: 2px;
+    // }
+
+    p {
+        font-size: 25px;
+        line-height: 29.7px;
+        color: black;
+    }
+}
+
+#footer {
+    height: 297px;
+    background-color: $c3;
+
+    img {
+        width: 225.23px;
+        height: 168.51px;
+    }
+
+    p {
+        color: #F9F8F6;
+        font-size: 30px;
+        margin-bottom: 0;
+
+        a {
+            color: #F9F8F6;
+            text-decoration: none;
+        }
+    }
+}
